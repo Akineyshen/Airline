@@ -1,0 +1,18 @@
+Airports:
+Warszawa
+  Boing
+Portu
+  Sonata
+Routes:
+Warszawa - Portu
+300
+Flights:
+1 | Route: Warszawa - Portu | Departure: 14:45 19.03.2023 | Arrival: 15:39 20.03.2023
+Clients:
+Maksim
+452378774
+false
+0
+Tickets:
+1 | Route: Warszawa - Portu | Departure: 14:45 19.03.2023 | Arrival: 15:39 20.03.2023
+Maksim
