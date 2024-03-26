@@ -1,2 +1,12 @@
 # Project_Airline
-This Java project offers a console-based system for managing air travel. Users can create, view, and delete airports, routes, flights, airplanes, clients, and tickets. It provides tools for efficient management of air transportation services.
+This Java project represents a comprehensive simulation of an airport management system, designed to manage various entities related to airport operations such as airports, airplanes, flights, routes, clients, and tickets. The system allows users to interactively create, view, delete, and manage these entities through a console-based interface. It is organized into several classes, each responsible for handling specific aspects of the system:
+* `Airport:` Manages airport creation, deletion, and viewing, including associating airplanes with airports.
+* `Airplane:` Handles airplane details, including creation and deletion. It associates airplanes with specific airports and keeps track of airplane characteristics such as name, seat count, and range.
+* `Route:` Manages flight routes, including their creation and deletion. Routes are defined by departure and arrival airports and the distance between them. It ensures that there are available airplanes at the departure airport that can cover the route distance.
+* `Flight:` Deals with flight schedules, allowing users to create flights based on available routes and specifying departure and arrival times and dates.
+* `Client:` Manages client information, supporting both individual and company clients. Company clients can own multiple airplanes. Clients can book tickets for flights.
+* `Ticket:` Represents a booking for a specific flight by a client, linking clients with their flights.
+
+The project also includes functionality to save and load the entire system state to and from a file, enabling persistent data management across sessions. This is accomplished through the serialization and deserialization of the system entities to a text file, handling various aspects like airport and airplane associations, flight details, client information, and booked tickets.
+
+This system is encapsulated in a `Main` class that serves as the entry point, providing a menu-driven interface for users to interact with. It utilizes a `Scanner` for input operations, allowing users to execute a wide range of commands corresponding to system functionalities such as creating new airports, adding airplanes, scheduling flights, managing clients, and more. The implementation demonstrates key programming concepts such as class design, object-oriented programming, collections handling, file I/O operations for persistence, and user input handling in Java.
