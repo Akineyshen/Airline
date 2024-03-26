@@ -1,4 +1,4 @@
-# Project_Airline
+# Project Airline
 This Java project represents a comprehensive simulation of an airport management system, designed to manage various entities related to airport operations such as airports, airplanes, flights, routes, clients, and tickets. The system allows users to interactively create, view, delete, and manage these entities through a console-based interface. It is organized into several classes, each responsible for handling specific aspects of the system:
 * `Airport:` Manages airport creation, deletion, and viewing, including associating airplanes with airports.
 * `Airplane:` Handles airplane details, including creation and deletion. It associates airplanes with specific airports and keeps track of airplane characteristics such as name, seat count, and range.
