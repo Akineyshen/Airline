@@ -1,0 +1,24 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+class Ticket {
+    private String flight;
+    private Client client;
+
+    public Ticket(String flight, Client client) {
+        this.flight = flight;
+        this.client = client;
+        client.addTicket(this);
+        System.out.println("Ticket booked: " + flight + " - " + client.getName());
+    }
+
+    public String getFlight() {
+        return this.flight;
+    }
+
+    public Client getClient() {
+        return this.client;
+    }
+}
